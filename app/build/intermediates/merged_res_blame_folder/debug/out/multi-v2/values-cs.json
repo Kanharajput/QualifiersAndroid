@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-cs\\values-cs.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\5361b816e6f2da664451b7e3ccffadc9\\transformed\\core-1.0.0\\res\\values-cs\\values-cs.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\4afd4f5f390f2998f1a06307e306af63\\transformed\\core-1.1.0\\res\\values-cs\\values-cs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
