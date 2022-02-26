@@ -38,26 +38,25 @@
 31-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:23:9-41
 32        android:supportsRtl="true"
 32-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:24:9-35
-33        android:testOnly="true"
-34        android:theme="@style/AppTheme" >
-34-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:25:9-40
-35        <activity
-35-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:26:9-33:20
-36            android:name="com.example.android.materialme.MainActivity"
-36-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:26:19-77
-37            android:exported="true" >
-37-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:27:13-36
-38            <intent-filter>
-38-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:28:13-32:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:29:17-69
-39-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:29:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:31:17-77
-41-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:31:27-74
-42            </intent-filter>
-43        </activity>
-44    </application>
-45
-46</manifest>
+33        android:theme="@style/AppTheme" >
+33-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:25:9-40
+34        <activity
+34-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:26:9-33:20
+35            android:name="com.example.android.materialme.MainActivity"
+35-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:26:19-77
+36            android:exported="true" >
+36-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:27:13-36
+37            <intent-filter>
+37-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:28:13-32:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:29:17-69
+38-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:29:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:31:17-77
+40-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:31:27-74
+41            </intent-filter>
+42        </activity>
+43    </application>
+44
+45</manifest>

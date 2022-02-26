@@ -609,6 +609,17 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable img_badminton
+drawable img_baseball
+drawable img_basketball
+drawable img_bowling
+drawable img_cycling
+drawable img_golf
+drawable img_running
+drawable img_soccer
+drawable img_swimming
+drawable img_tabletennis
+drawable img_tennis
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
