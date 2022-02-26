@@ -10,8 +10,9 @@ int anim abc_slide_out_bottom 0x7f010008
 int anim abc_slide_out_top 0x7f010009
 int anim abc_tooltip_enter 0x7f01000a
 int anim abc_tooltip_exit 0x7f01000b
-int array sports_info 0x7f020000
-int array sports_titles 0x7f020001
+int array sports_image 0x7f020000
+int array sports_info 0x7f020001
+int array sports_titles 0x7f020002
 int attr actionBarDivider 0x7f030000
 int attr actionBarItemBackground 0x7f030001
 int attr actionBarPopupTheme 0x7f030002
