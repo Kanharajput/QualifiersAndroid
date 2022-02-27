@@ -18,6 +18,8 @@ package com.example.android.materialme;
 
 import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +28,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import java.nio.channels.spi.SelectorProvider;
 import java.util.ArrayList;
 
 /***
@@ -93,7 +96,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
     /**
      * ViewHolder class that represents each row of data in the RecyclerView.
      */
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         // Member Variables for the TextViews
         private TextView mTitleText;
@@ -112,6 +115,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             mTitleText = itemView.findViewById(R.id.title);
             mInfoText = itemView.findViewById(R.id.subTitle);
             mSportsImage = itemView.findViewById(R.id.sportsImage);     // referencing the imageView
+            itemView.setOnClickListener(this);     // setting the onclick listener
         }
 
         void bindTo(Sport currentSport){
@@ -120,6 +124,15 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             mInfoText.setText(currentSport.getInfo());
             //mSportsImage.setImageResource(currentSport.getImageResource());      // doc saying it's not working due to memory load(out of memory) but it's working fine
             Glide.with(mContext).load(currentSport.getImageResource()).into(mSportsImage);   // need glide plugin to use it
+        }
+
+        @Override
+        public void onClick(View v) {
+            Sport currentSport = mSportsData.get(getAdapterPosition());
+            Intent detailIntent = new Intent(mContext,DetailActivity.class);
+            detailIntent.putExtra("sport_title",currentSport.getTitle());          // passing the title
+            detailIntent.putExtra("sport_image",currentSport.getImageResource());     // passing the image resources , remember it is only resource id not an image
+            mContext.startActivity(detailIntent);         // start the new Activity
         }
     }
 }

@@ -23,6 +23,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".DetailActivity"
+            android:label="Sport Details"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENTACTIVITY"
+                android:value="com.example.android.materialme.MainActivity"/>
+
+        </activity>
+
         <activity android:name="com.example.android.materialme.MainActivity"
             android:exported="true">
             <intent-filter>
