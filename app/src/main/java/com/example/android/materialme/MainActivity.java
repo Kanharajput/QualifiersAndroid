@@ -26,6 +26,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /***
  * Main Activity for the Material Me app, a mock sports news application
@@ -62,16 +63,28 @@ public class MainActivity extends AppCompatActivity {
         /* initialise ItemTouchHelper
          SimpleCallback first parameter is the drag direction mean after drag where you can move that item like left , right , top , bottom
          here dragDirs = 0 means no move after drag start from 1 to 15 to check directions.
+         one can also assign directions where we want to drop the dragged item
          */
         ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(
-                                                    0,ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT
+                                                    ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT|
+                                                            ItemTouchHelper.UP | ItemTouchHelper.DOWN ,
+                                                    ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT
                                                     ){
             @Override
             public boolean onMove(@NonNull RecyclerView recyclerView,
                                   @NonNull RecyclerView.ViewHolder viewHolder,
                                   @NonNull RecyclerView.ViewHolder target) {
 
-                return false;
+                // get the position of the item which is drag
+                int from = viewHolder.getAdapterPosition();
+                int to = target.getAdapterPosition();
+
+                // swap this two items
+                Collections.swap(mSportsData,from,to);
+
+                mAdapter.notifyItemMoved(from,to);        // calling adapter notify method to move dataset
+
+                return true;     // if handled return true;
             }
 
             @Override
