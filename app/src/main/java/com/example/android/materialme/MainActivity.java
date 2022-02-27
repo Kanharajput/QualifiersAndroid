@@ -18,7 +18,10 @@ package com.example.android.materialme;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -55,6 +58,31 @@ public class MainActivity extends AppCompatActivity {
 
         // Get the data.
         initializeData();
+
+        /* initialise ItemTouchHelper
+         SimpleCallback first parameter is the drag direction mean after drag where you can move that item like left , right , top , bottom
+         here dragDirs = 0 means no move after drag start from 1 to 15 to check directions.
+         */
+        ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(
+                                                    0,ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT
+                                                    ){
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView,
+                                  @NonNull RecyclerView.ViewHolder viewHolder,
+                                  @NonNull RecyclerView.ViewHolder target) {
+
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+
+                mSportsData.remove(viewHolder.getAdapterPosition());    // removing the data from the the list which is swiped
+                mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());          // notify adpater to recreate list
+            }
+        });
+
+        helper.attachToRecyclerView(mRecyclerView);     //attach recycler view with the ItemTouchHelper
     }
 
     /**
