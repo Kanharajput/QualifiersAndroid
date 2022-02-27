@@ -26,6 +26,9 @@ public class DetailActivity extends AppCompatActivity {
         // get the intent
         Intent intentFromMain = getIntent();
         String title = intentFromMain.getStringExtra("sport_title");
+
+        // setting the title and image
+        sportTitle.setText(title);
         Glide.with(this).load(intentFromMain.getIntExtra("sport_image",0)).into(sportImage);     // directly get image from it's resource
     }
 }

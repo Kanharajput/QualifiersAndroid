@@ -18,6 +18,7 @@ package com.example.android.materialme;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -127,4 +128,8 @@ public class MainActivity extends AppCompatActivity {
         sportImageResources.recycle();
     }
 
+    // reseting the data
+    public void resetSports(View view) {
+        initializeData();      // this method call notifyDataSetChanged so we don't need to do that
+    }
 }
