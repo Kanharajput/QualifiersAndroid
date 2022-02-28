@@ -20,7 +20,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="21"
         android:targetSdkVersion="31" />
 
     <application
@@ -33,6 +33,14 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.android.materialme.DetailActivity"
+            android:label="Sport Details"
+            android:parentActivityName="com.example.android.materialme.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENTACTIVITY"
+                android:value="com.example.android.materialme.MainActivity" />
+        </activity>
+        <activity
             android:name="com.example.android.materialme.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -41,6 +49,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.ngamolsky.android.materialme.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
     </application>
 
 </manifest>

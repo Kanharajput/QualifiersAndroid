@@ -24,12 +24,20 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_detail.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\src\\main\\res\\layout\\activity_detail.xml"
+    },
+    {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_basketball.jpg.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\src\\main\\res\\drawable\\img_basketball.jpg"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_running.jpg.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\src\\main\\res\\drawable\\img_running.jpg"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_reset.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\src\\main\\res\\drawable\\ic_reset.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_swimming.jpg.flat",

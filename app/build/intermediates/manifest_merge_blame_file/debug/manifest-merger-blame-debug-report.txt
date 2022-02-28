@@ -20,17 +20,17 @@
 20    android:versionName="1.0" >
 21
 22    <uses-sdk
-23        android:minSdkVersion="15"
+23        android:minSdkVersion="21"
 23-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml
 24        android:targetSdkVersion="31" />
 24-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml
 25
 26    <application
-26-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:20:5-34:19
+26-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:20:5-46:19
 27        android:allowBackup="true"
 27-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:21:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.1.0] C:\Users\hp\.gradle\caches\transforms-3\4afd4f5f390f2998f1a06307e306af63\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+28-->[androidx.core:core:1.7.0] C:\Users\hp\.gradle\caches\transforms-3\376792b261fdcbfd86757f02ea12377d\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 29        android:debuggable="true"
 30        android:icon="@mipmap/ic_launcher"
 30-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:22:9-43
@@ -42,22 +42,59 @@
 34        android:theme="@style/AppTheme" >
 34-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:25:9-40
 35        <activity
-35-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:26:9-33:20
-36            android:name="com.example.android.materialme.MainActivity"
-36-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:26:19-77
-37            android:exported="true" >
-37-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:27:13-36
-38            <intent-filter>
-38-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:28:13-32:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:29:17-69
-39-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:29:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:31:17-77
-41-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:31:27-74
-42            </intent-filter>
-43        </activity>
-44    </application>
-45
-46</manifest>
+35-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:27:9-36:20
+36            android:name="com.example.android.materialme.DetailActivity"
+36-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:28:13-43
+37            android:label="Sport Details"
+37-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:29:13-42
+38            android:parentActivityName="com.example.android.materialme.MainActivity" >
+38-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:30:13-55
+39            <meta-data
+39-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:32:13-34:78
+40                android:name="android.support.PARENTACTIVITY"
+40-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:33:17-62
+41                android:value="com.example.android.materialme.MainActivity" />
+41-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:34:17-76
+42        </activity>
+43        <activity
+43-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:38:9-45:20
+44            android:name="com.example.android.materialme.MainActivity"
+44-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:38:19-77
+45            android:exported="true" >
+45-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:39:13-36
+46            <intent-filter>
+46-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:40:13-44:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:41:17-69
+47-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:41:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:43:17-77
+49-->C:\Users\hp\AndroidStudioProjects\MaterialMe-Starter\app\src\main\AndroidManifest.xml:43:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <provider
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\8b7c53cedc320aafa8740bc99100eae7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+54            android:name="androidx.startup.InitializationProvider"
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\8b7c53cedc320aafa8740bc99100eae7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+55            android:authorities="com.ngamolsky.android.materialme.androidx-startup"
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\8b7c53cedc320aafa8740bc99100eae7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+56            android:exported="false" >
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\8b7c53cedc320aafa8740bc99100eae7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+57            <meta-data
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\8b7c53cedc320aafa8740bc99100eae7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+58                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\8b7c53cedc320aafa8740bc99100eae7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+59                android:value="androidx.startup" />
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\8b7c53cedc320aafa8740bc99100eae7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+60            <meta-data
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\hp\.gradle\caches\transforms-3\e3d5f7348f31abeaadb43deed4aab633\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+61                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\hp\.gradle\caches\transforms-3\e3d5f7348f31abeaadb43deed4aab633\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+62                android:value="androidx.startup" />
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\hp\.gradle\caches\transforms-3\e3d5f7348f31abeaadb43deed4aab633\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+63        </provider>
+64    </application>
+65
+66</manifest>
