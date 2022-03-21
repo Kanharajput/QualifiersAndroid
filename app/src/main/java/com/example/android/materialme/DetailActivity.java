@@ -36,6 +36,9 @@ public class DetailActivity extends AppCompatActivity {
         // setting the title and image
         sportTitle.setText(title);
 
+        // setting up the transition name in imageview so will react with that
+        sportImage.setTransitionName("banner_motion");
+
         Glide.with(this).load(intentFromMain.getIntExtra("sport_image",0)).into(sportImage);     // directly get image from it's resource
     }
 }

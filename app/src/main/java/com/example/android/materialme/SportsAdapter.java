@@ -16,6 +16,8 @@
 
 package com.example.android.materialme;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -122,6 +124,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             // Populate the textviews with data.
             mTitleText.setText(currentSport.getTitle());
             mInfoText.setText(currentSport.getInfo());
+            mSportsImage.setTransitionName("banner_motion");      // setting up the transition name dynamically
             //mSportsImage.setImageResource(currentSport.getImageResource());      // doc saying it's not working due to memory load(out of memory) but it's working fine
             Glide.with(mContext).load(currentSport.getImageResource()).into(mSportsImage);   // need glide plugin to use it
         }
@@ -133,7 +136,10 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             detailIntent.putExtra("sport_title",currentSport.getTitle());          // passing the title
             detailIntent.putExtra("sport_image",currentSport.getImageResource());     // passing the image resources , remember it is only resource id not an image
             detailIntent.putExtra("sport_detail",currentSport.getDetail());           // passing the detail
-            mContext.startActivity(detailIntent);         // start the new Activity
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext,mSportsImage, "banner_motion");
+
+            mContext.startActivity(detailIntent,options.toBundle());         // start the new Activity
         }
     }
 }
