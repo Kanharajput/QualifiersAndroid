@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hi-rIN\\values-hi-rIN.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hp\\AndroidStudioProjects\\MaterialMe-Starter\\app\\src\\main\\res\\values-hi-rIN\\strings.xml",
+                    "from": {
+                        "startLines": "5,3,4,2",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "233,111,164,57",
+                        "endColumns": "1692,51,67,52",
+                        "endOffsets": "1921,158,227,105"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,1748,1800,1868",
+                        "endColumns": "1692,51,67,52",
+                        "endOffsets": "1743,1795,1863,1916"
+                    }
+                }
+            ]
+        }
+    ]
+}
